@@ -1,5 +1,5 @@
 # opencart
 
-Тест для сайта: https://learn-qa.ru/index.php?route=common/home
+Тест для сайта: https://learn-qa.ru
 
 -Проверка успешной регистрации
