@@ -48,7 +48,7 @@ public class Data {
 
     public static String password = getRandomPassword();
 
-    public static String url = "https://learn-qa.ru/index.php?route=common/home";
+    public static String url = "https://learn-qa.ru";
     public static String successRegMessage = "Ваша учетная запись создана!";
 
 }
