@@ -4,6 +4,32 @@ import java.util.Random;
 
 public class Data {
 
+    public static String getRandomFirstname() {
+        String simbols = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+        StringBuilder firstname = new StringBuilder();
+        Random rnd = new Random();
+        while (firstname.length() < 32) {
+            int index = (int) (rnd.nextFloat() * simbols.length());
+            firstname.append(simbols.charAt(index));
+        }
+        String firstnameStr = firstname.toString();
+
+        return firstnameStr;
+    }
+
+    public static String getRandomLastname() {
+        String simbols = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+        StringBuilder lastname = new StringBuilder();
+        Random rnd = new Random();
+        while (lastname.length() < 32) {
+            int index = (int) (rnd.nextFloat() * simbols.length());
+            lastname.append(simbols.charAt(index));
+        }
+        String lastnameStr = lastname.toString();
+
+        return lastnameStr;
+    }
+
     public static String getRandomEmail() {
         String simbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder mail = new StringBuilder();
@@ -21,7 +47,7 @@ public class Data {
         String simbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~`!@#$%^&*()-_=+[{]}|;:'<.>/?";
         StringBuilder password = new StringBuilder();
         Random rnd = new Random();
-        while (password.length() < 8) {
+        while (password.length() < 20) {
             int index = (int) (rnd.nextFloat() * simbols.length());
             password.append(simbols.charAt(index));
         }
@@ -34,17 +60,16 @@ public class Data {
         String simbols = "1234567890";
         StringBuilder telephone = new StringBuilder();
         Random rnd = new Random();
-        while (telephone.length() < 10) {
+        while (telephone.length() < 32) {
             int index = (int) (rnd.nextFloat() * simbols.length());
             telephone.append(simbols.charAt(index));
         }
         String telephoneStr = telephone.toString();
 
-        return "+7" + telephoneStr;
+        return telephoneStr;
     }
 
-    public static String firstname = "Тимофей";
-    public static String lastname = "Скорик";
+
 
     public static String password = getRandomPassword();
 

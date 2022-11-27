@@ -62,7 +62,7 @@ public class RegPage extends AbstractPage{
 
 
     public RegPage validFirstname() {
-        inputFirstname.sendKeys(Data.firstname);
+        inputFirstname.sendKeys(Data.getRandomFirstname());
         return this;
     }
 
@@ -72,7 +72,7 @@ public class RegPage extends AbstractPage{
     }
 
     public RegPage validLastname() {
-        inputLastname.sendKeys(Data.lastname);
+        inputLastname.sendKeys(Data.getRandomLastname());
         return this;
     }
 
