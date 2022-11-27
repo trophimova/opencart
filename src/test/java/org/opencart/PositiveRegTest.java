@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 public class PositiveRegTest extends AbstractTest{
 
     @Test
-    @DisplayName("Проверка регистрации с валидными данными")
+    @DisplayName("Проверка успешной регистрации")
     public void Test() throws InterruptedException {
 
         RegPage regPage = new RegPage(getDriver());
